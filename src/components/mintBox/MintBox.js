@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchData} from "../../redux/data/dataActions";
 import * as s from "../../styles/globalStyles";
-import {connect} from "../../redux/blockchain/blockchainActions";
 import {ResponsiveWrapper, StyledButton, StyledLink, StyledRoundButton, truncate} from "./mintBoxStyle";
 
 const MintBox = () => {
@@ -111,11 +110,9 @@ const MintBox = () => {
         jc={"center"}
         ai={"center"}
         style={{
-          backgroundColor: "var(--accent)",
+          backgroundColor: "rgba(0, 0, 0, 0.4)",
           padding: 24,
           borderRadius: 24,
-          border: "4px dashed var(--secondary)",
-          boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
         }}
       >
         <s.TextTitle
@@ -194,16 +191,6 @@ const MintBox = () => {
                 >
                   Connect to the {CONFIG.NETWORK.NAME} network
                 </s.TextDescription>
-                <s.SpacerSmall/>
-                <StyledButton
-                  onClick={(e) => {
-                    e.preventDefault();
-                    dispatch(connect());
-                    getData();
-                  }}
-                >
-                  CONNECT
-                </StyledButton>
                 {blockchain.errorMsg !== "" ? (
                   <>
                     <s.SpacerSmall/>
