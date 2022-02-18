@@ -1,7 +1,7 @@
 import React from "react";
-import {Container} from "react-bootstrap";
-import HeaderComp from "../headerComp/HeaderComp";
+import {Container, Row} from "react-bootstrap";
 import BannerComp from "../bannerComp/BannerComp";
+import WelcomeComp from "../welcomeComp/WelcomeComp";
 
 const MainLayout = () => {
   return (
@@ -9,9 +9,15 @@ const MainLayout = () => {
                className="main-layout"
                style={{
                  paddingLeft: 0,
-                 paddingRight: 0
+                 paddingRight: 0,
+                 backgroundColor: "rgb(48, 51, 75)"
                }}>
-      <BannerComp/>
+      <Row id="home">
+        <BannerComp/>
+      </Row>
+      <Row id="welcome">
+        <WelcomeComp/>
+      </Row>
     </Container>
   );
 };
