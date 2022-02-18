@@ -1,15 +1,17 @@
 @import "../../styles/rwd";
 
 .header-comp {
+  z-index: 1;
+
   &-social {
     padding-right: 0 !important;
     padding-left: 0 !important;
 
     @include mobile {
-      display: none;
+      display: none !important;
     }
     @include tablet {
-      display: none;
+      display: none !important;
     }
   }
 
@@ -34,12 +36,14 @@
       border: 1px solid #ffffff;
       border-radius: 50px;
       padding-right: 0 !important;
+      padding-left: 0 !important;
     }
     @include wide-desktop {
       height: 70px;
       border: 1px solid #ffffff;
       border-radius: 50px;
       padding-right: 0 !important;
+      padding-left: 0 !important;
     }
 
     .header-comp-mobile-screen {
@@ -66,6 +70,7 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
 
     &:hover {
       color: #F5BC58 !important;
@@ -73,13 +78,13 @@
   }
 
   .navbar-logo {
-    width: 150px;
+    flex: 1;
     position: relative;
     height: 70px;
-    margin: 0 12px !important;
+    margin: 0 36px;
 
     img {
-      width: 100%;
+      width: 150px;
       position: absolute;
       bottom: 0;
       left: 50%;
@@ -97,8 +102,10 @@
 
   .left-side-menu, .right-side-menu {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     padding: 12px 0;
+    flex: 2;
     @include mobile {
       padding: 0;
       .menu-item:not(:first-child) {
@@ -113,45 +120,25 @@
     }
   }
 
-  .left-side-menu {
-    justify-content: center;
-    margin-right: 0 !important;
-  }
-
-  .right-side-menu {
-    flex: 1;
-    justify-content: space-between;
-  }
-
   .header-comp-button {
     height: 70px;
-    margin-left: 24px;
 
     .connect-wallet-button {
       border: none;
       outline: none;
       font-size: 14px;
+      color: #000;
       background-color: #F5BC58;
       margin-right: 5px;
-      border-radius: 50px;
-      color: #252125;
+      width: 150px;
       padding: 12px 30px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      background-image: linear-gradient(to right, #05f6ea, #20f1da, #33ebc9, #43e6b9, #51e0a8);
-      transition: all .1s linear;
+      border-radius: 50px;
+      font-weight: bold;
 
       &:hover {
-        color: #ffffff;
+        background-color: #ffffff;
+        color: #F5BC58;
       }
-    }
-
-    @include mobile {
-      margin-left: unset;
-    }
-    @include tablet {
-      margin-left: unset;
     }
   }
 }

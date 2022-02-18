@@ -35,7 +35,6 @@ const HeaderComp = ({connectWallet}) => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav" className="header-navbar-menu">
           <Nav className="me-auto left-side-menu">
-            <Nav.Link href="#benefits" className="menu-item">HOME</Nav.Link>
             <Nav.Link href="#introducing"
                       className="menu-item d-flex flex-column justify-content-center align-items-center">
               <span>introducing samurai society</span>

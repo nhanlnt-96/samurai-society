@@ -11,7 +11,6 @@ const MainLayout = () => {
                  paddingLeft: 0,
                  paddingRight: 0
                }}>
-      <HeaderComp/>
       <BannerComp/>
     </Container>
   );

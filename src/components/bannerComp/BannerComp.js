@@ -1,36 +1,35 @@
 import React from "react";
+import {Parallax} from "react-parallax";
+import HeaderComp from "../headerComp/HeaderComp";
+import {Container} from "react-bootstrap";
 import Banner from "../../assets/imgs/ape.png";
 
 import "./BannerComp.scss";
 
 const BannerComp = () => {
   return (
-    <div className="home_banner" id="home">
+    <Parallax bgImage={Banner} strength={500} className="banner-comp">
+      <HeaderComp/>
       <div className="bg-blur"/>
-      <div className="hidden-xs">
-        <img src={Banner} title="" alt="" width="100%"/>
-      </div>
-      <div className="visible-xs">
-        <img src={Banner} title="" alt="" width="100%"/>
-      </div>
-      <div className="home_banner_position">
-        <div className="home_banner_text" data-aos="fade-up" data-aos-duration="1000">
-          <h4>Ready to take over the Metaverse and the NFT Space</h4>
-          <h3>
-            <em>JOIN</em>
-            <span>BORED</span>
-            BUNNY
-          </h3>
-          <p>Bored Bunny is your ticket into the largest and fastest growing NFT Project</p>
-          <div className="btn_flex">
-            <div className="btn_flex_inner">
-              <a href="#" className="btn"> Mint is Live</a>
-            </div>
+      <Container fluid className="banner-comp-container d-flex flex-column justify-content-center align-items-center">
+        <Container className="banner-comp-content">
+          <div data-aos="fade-up" className="banner-comp-title">
+            <h1>
+              <em>Welcome to</em>
+              <br/>
+              <span>The Samurai Society!</span>
+            </h1>
+            <h2>Which team will you join? Team Earth or Team Kepler</h2>
           </div>
-        </div>
-      </div>
-      <div className="scroll_down"/>
-    </div>
+        </Container>
+        {/*<div className="banner-comp-btn comp-primary-btn">*/}
+        {/*  <button data-aos="zoom-in" className="button-item">*/}
+        {/*    <SiDiscord/>*/}
+        {/*    Join Our Discord*/}
+        {/*  </button>*/}
+        {/*</div>*/}
+      </Container>
+    </Parallax>
   );
 };
 
