@@ -1,18 +1,27 @@
 import React, {useState} from "react";
 import {Container, Nav, Navbar} from "react-bootstrap";
 import Logo from "../../assets/imgs/logo.png";
-import Social1 from "../../assets/icons/social1.png";
-import Social2 from "../../assets/icons/social2.png";
-import Social3 from "../../assets/icons/social3.png";
-import Social4 from "../../assets/icons/social4.png";
-import BtnImg1 from "../../assets/icons/btn_img1.png";
 
 import "./HeaderComp.scss";
+import {socialData} from "../../configs/socialData";
 
 const HeaderComp = ({connectWallet}) => {
   const [isActive, setIsActive] = useState(false);
   return (
-    <Navbar collapseOnSelect expand="lg" className="header-comp">
+    <Navbar collapseOnSelect expand="lg" className="header-comp flex-column">
+      <Container className="header-comp-social">
+        <div className="header-comp-social-container">
+          {
+            socialData.map((val, index) => (
+              <div key={index} className="social-item">
+                <a href={val.socialUrl} className="item">
+                  <img src={val.socialIcon} alt=""/>
+                </a>
+              </div>
+            ))
+          }
+        </div>
+      </Container>
       <Container className="header-comp-container">
         <Navbar.Brand href="#home" className="header-comp-mobile-screen">
           <img src={Logo} alt="bored-bunny"/>

@@ -1,11 +1,31 @@
 @import "../../styles/rwd";
 
 .header-comp {
-  @include desktop {
-    padding-top: 50px !important;
+  &-social {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
   }
-  @include wide-desktop {
-    padding-top: 50px !important;
+
+  &-social-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px 0;
+
+    .social-item:not(:first-child) {
+      margin-left: 24px;
+    }
+
+    .social-item .item img {
+      width: 30px;
+    }
   }
 
   &-container {
