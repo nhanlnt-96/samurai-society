@@ -1,110 +1,52 @@
-import React from "react";
+import React, {useState} from "react";
+import {Container, Nav, Navbar} from "react-bootstrap";
 import Logo from "../../assets/imgs/logo.png";
 import Social1 from "../../assets/icons/social1.png";
 import Social2 from "../../assets/icons/social2.png";
 import Social3 from "../../assets/icons/social3.png";
 import Social4 from "../../assets/icons/social4.png";
 import BtnImg1 from "../../assets/icons/btn_img1.png";
-import MobileMenu from "../../assets/icons/mobile_menu.png";
 
 import "./HeaderComp.scss";
 
-const HeaderComp = () => {
+const HeaderComp = ({connectWallet}) => {
+  const [isActive, setIsActive] = useState(false);
   return (
-    <React.Fragment>
-      <header className="header_main desktop_header">
-        <div className="container">
-          <div className="header_inner">
-            <div className="header_flex">
-              <div className="header_menu header_menu1">
-                <ul>
-                  <li>
-                    <a href="#home">HOME</a>
-                  </li>
-                  <li>
-                    <a href="#intro">INTRODUCING SAMURAI SOCIETY</a>
-                  </li>
-                  <li>
-                    <a href="#benefits">BENEFITS & UTILITIES</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="header_logo">
-                <a href="/" className="header_logo">
-                  <img src={Logo} alt="logo"/>
-                </a>
-              </div>
-              <div className="header_menu header_menu2">
-                <ul>
-                  <li>
-                    <a href="#roadmap">ROADMAP</a>
-                  </li>
-                  <li>
-                    <a href="#team">THE TEAM</a>
-                  </li>
-                  <li>
-                    <a href="#faq">FAQ’S</a>
-                  </li>
-                  <li>
-                    <a href="#" className="btn">Select wallet</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="social_menu">
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src={Social1} title="" alt=""/>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src={Social2} title="" alt=""/>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src={Social3} title="" alt=""/>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src={Social4} title="" alt=""/>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-      <header className="mobile_header">
-        <div className="container">
-          <div className="mobile_header_flex">
-            <div className="mobile_header_inner">
-              <div className="mobile_header_logo">
-                <a href="/" className="header_logo">
-                  <img src={Logo} alt="logo"/>
-                </a>
-              </div>
-            </div>
-            <div className="mobile_header_inner">
-              <ul>
-                <li>
-                  <a href="#" className="btn">
-                    <img src={BtnImg1} title="" alt=""/>
-                    Buy On Opensea
-                  </a>
-                </li>
-                <li>
-                  <img src={MobileMenu} title="" alt=""/>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-    </React.Fragment>
+    <Navbar collapseOnSelect expand="lg" className="header-comp">
+      <Container className="header-comp-container">
+        <Navbar.Brand href="#home" className="header-comp-mobile-screen">
+          <img src={Logo} alt="bored-bunny"/>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"
+                       onClick={() => setIsActive(!isActive)}
+                       className={`header-comp-toggle-custom ${isActive && "active"}`}>
+          <span className="toggle-line"/>
+          <span className="toggle-line"/>
+          <span className="toggle-line"/>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav" className="header-navbar-menu">
+          <Nav className="me-auto left-side-menu">
+            <Nav.Link href="#benefits" className="menu-item">HOME</Nav.Link>
+            <Nav.Link href="#introducing"
+                      className="menu-item d-flex flex-column justify-content-center align-items-center">
+              <span>introducing samurai society</span>
+            </Nav.Link>
+            <Nav.Link href="#benefits" className="menu-item">BENEFITS & UTILITIES</Nav.Link>
+          </Nav>
+          <Navbar.Brand href="#home" className="navbar-logo">
+            <img src={Logo} alt="bored-bunny"/>
+          </Navbar.Brand>
+          <Nav className="right-side-menu">
+            <Nav.Link href="#roadmap" className="menu-item">roadmap</Nav.Link>
+            <Nav.Link href="#team" className="menu-item">The team</Nav.Link>
+            <Nav.Link href="#faq" className="menu-item">faq's</Nav.Link>
+          </Nav>
+          <Nav className="header-comp-button d-flex justify-content-center align-items-center">
+            <button onClick={connectWallet} className="connect-wallet-button">Select wallet</button>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
