@@ -1,0 +1,118 @@
+@import "../../styles/rwd";
+
+.nft-explain {
+  &-comp {
+    padding: 24px 0 !important;
+  }
+
+  &-container {
+    position: relative;
+  }
+
+  @include desktop {
+    &-container {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+  @include wide-desktop {
+    &-container {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+}
+
+.nft-explain-container .nft-explain-title h3 {
+  color: #fff;
+  margin: 0 0 10px;
+  font-family: 'Rubik', sans-serif !important;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  em {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-style: normal;
+    font-weight: 900;
+  }
+}
+
+.nft-explain-container .card-container .card {
+  position: relative;
+  width: 350px;
+  height: 520px;
+  background-color: #ffffff;
+  margin: 12px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+  transition: .5s;
+
+  .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+
+    .img-container {
+      margin-top: 12px;
+    }
+
+    img {
+      width: 100px;
+      border-radius: 100%;
+    }
+
+    h2 {
+      margin-top: 12px;
+      color: #ffffff;
+      font-size: 20px;
+      font-family: "Rubik", sans-serif;
+      font-weight: 700;
+    }
+
+    .img-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+
+      img {
+        width: calc(100% / 2);
+        margin-top: unset;
+        object-fit: cover;
+        height: calc(100% / 2);
+        border-radius: unset;
+      }
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 180px;
+    padding: 12px;
+    text-align: center;
+
+    p {
+      font-size: 15px;
+      text-align: justify;
+      line-height: 25px;
+    }
+  }
+
+  @include smallScreen {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    height: 620px;
+  }
+}

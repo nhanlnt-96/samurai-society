@@ -2,8 +2,9 @@ import React from "react";
 import {Container, Row} from "react-bootstrap";
 import BannerComp from "../bannerComp/BannerComp";
 import WelcomeComp from "../welcomeComp/WelcomeComp";
-import IntroducingComp from "../introducing/IntroducingComp";
-import SubBannerComp from "../subBanner/SubBannerComp";
+import IntroducingComp from "../introducingComp/IntroducingComp";
+import SubBannerComp from "../subBannerComp/SubBannerComp";
+import NftExplainComp from "../nftExplainComp/NftExplainComp";
 
 const MainLayout = () => {
   return (
@@ -26,6 +27,9 @@ const MainLayout = () => {
       </Row>
       <Row>
         <SubBannerComp/>
+      </Row>
+      <Row id="nft-explain">
+        <NftExplainComp/>
       </Row>
     </Container>
   );

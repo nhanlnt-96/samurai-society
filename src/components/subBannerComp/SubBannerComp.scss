@@ -1,3 +1,5 @@
+@import "../../styles/rwd";
+
 .sub-banner-comp {
   position: relative;
 
@@ -15,6 +17,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 450px;
+  }
+
+  @include mobile {
+    &-container {
+      height: 300px;
+    }
   }
 }
 
