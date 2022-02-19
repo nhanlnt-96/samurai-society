@@ -3,6 +3,7 @@ import {Container, Row} from "react-bootstrap";
 import BannerComp from "../bannerComp/BannerComp";
 import WelcomeComp from "../welcomeComp/WelcomeComp";
 import IntroducingComp from "../introducing/IntroducingComp";
+import SubBannerComp from "../subBanner/SubBannerComp";
 
 const MainLayout = () => {
   return (
@@ -22,6 +23,9 @@ const MainLayout = () => {
       </Row>
       <Row id="introducing">
         <IntroducingComp/>
+      </Row>
+      <Row>
+        <SubBannerComp/>
       </Row>
     </Container>
   );

@@ -1,0 +1,46 @@
+.sub-banner-comp {
+  position: relative;
+
+  .bg-blur {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 1;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 450px;
+  }
+}
+
+.sub-banner-comp-container {
+  position: relative;
+
+  .img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sub-banner-text {
+    position: absolute;
+    width: 100%;
+    bottom: 24px;
+    z-index: 1;
+
+    h3 {
+      font-size: 72px;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 0;
+      text-align: center;
+      font-family: 'Rubik', sans-serif !important;
+      font-weight: 900;
+    }
+  }
+}
