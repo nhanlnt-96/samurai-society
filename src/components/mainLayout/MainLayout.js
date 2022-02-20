@@ -8,6 +8,7 @@ import NftExplainComp from "../nftExplainComp/NftExplainComp";
 import BenefitsComp from "../benefitsComp/BenefitsComp";
 import RoadmapComp from "../roadmapComp/RoadmapComp";
 import TeamComp from "../teamComp/TeamComp";
+import FaqComp from "../faqComp/FaqComp";
 
 const MainLayout = () => {
   return (
@@ -42,6 +43,9 @@ const MainLayout = () => {
       </Row>
       <Row id="team">
         <TeamComp/>
+      </Row>
+      <Row id="faq">
+        <FaqComp/>
       </Row>
     </Container>
   );

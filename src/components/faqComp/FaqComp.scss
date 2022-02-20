@@ -1,0 +1,132 @@
+@import "../../styles/rwd";
+
+.faq-comp {
+  min-height: 100vh;
+
+  &-container {
+    height: 100%;
+    padding: 24px 0;
+  }
+
+  &-content, &-social {
+    margin-top: 24px !important;
+    width: 100%;
+  }
+}
+
+.faq-comp-container .faq-comp-title h3 {
+  color: #ffffff;
+  margin: 0 0 10px;
+  font-family: 'Rubik', sans-serif !important;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  em {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-style: normal;
+    font-weight: 900;
+  }
+}
+
+.faq-comp-content .accordion-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+
+  .accordion-item {
+    border: unset;
+    background-color: unset;
+
+    &:first-of-type .accordion-button {
+      border-top-left-radius: 50px !important;
+      border-top-right-radius: 50px !important;
+
+      &:not(.collapsed) {
+        border-top-left-radius: 50px !important;
+        border-top-right-radius: 50px !important;
+      }
+    }
+
+    @include mobile {
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .accordion-header-custom .accordion-button {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all .1s linear;
+    line-height: 25px;
+
+    &.collapsed {
+      border-bottom-right-radius: 50px !important;
+      border-bottom-left-radius: 50px !important;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: unset;
+      box-shadow: none;
+    }
+
+    &:not(.collapsed) {
+      background-color: #ffffff;
+      color: unset;
+      border-radius: 50px;
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  .accordion-body-custom {
+    font-size: 20px;
+    color: #ffffff;
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 12px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.faq-comp-social .social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 30px;
+  }
+
+  .social-item {
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 12px;
+    text-decoration: none;
+  }
+
+  @include mobile {
+    justify-content: unset;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    img {
+      width: 20px;
+    }
+    &:last-child {
+      margin-top: 24px;
+    }
+  }
+}
