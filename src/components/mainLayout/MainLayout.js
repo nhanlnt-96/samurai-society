@@ -6,6 +6,7 @@ import IntroducingComp from "../introducingComp/IntroducingComp";
 import SubBannerComp from "../subBannerComp/SubBannerComp";
 import NftExplainComp from "../nftExplainComp/NftExplainComp";
 import BenefitsComp from "../benefitsComp/BenefitsComp";
+import RoadmapComp from "../roadmapComp/RoadmapComp";
 
 const MainLayout = () => {
   return (
@@ -34,6 +35,9 @@ const MainLayout = () => {
       </Row>
       <Row id="benefit">
         <BenefitsComp/>
+      </Row>
+      <Row id="roadmap">
+        <RoadmapComp/>
       </Row>
     </Container>
   );
