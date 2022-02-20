@@ -5,6 +5,7 @@ import WelcomeComp from "../welcomeComp/WelcomeComp";
 import IntroducingComp from "../introducingComp/IntroducingComp";
 import SubBannerComp from "../subBannerComp/SubBannerComp";
 import NftExplainComp from "../nftExplainComp/NftExplainComp";
+import BenefitsComp from "../benefitsComp/BenefitsComp";
 
 const MainLayout = () => {
   return (
@@ -30,6 +31,9 @@ const MainLayout = () => {
       </Row>
       <Row id="nft-explain">
         <NftExplainComp/>
+      </Row>
+      <Row id="benefit">
+        <BenefitsComp/>
       </Row>
     </Container>
   );
