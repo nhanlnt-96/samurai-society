@@ -7,6 +7,7 @@ import SubBannerComp from "../subBannerComp/SubBannerComp";
 import NftExplainComp from "../nftExplainComp/NftExplainComp";
 import BenefitsComp from "../benefitsComp/BenefitsComp";
 import RoadmapComp from "../roadmapComp/RoadmapComp";
+import TeamComp from "../teamComp/TeamComp";
 
 const MainLayout = () => {
   return (
@@ -38,6 +39,9 @@ const MainLayout = () => {
       </Row>
       <Row id="roadmap">
         <RoadmapComp/>
+      </Row>
+      <Row id="team">
+        <TeamComp/>
       </Row>
     </Container>
   );
