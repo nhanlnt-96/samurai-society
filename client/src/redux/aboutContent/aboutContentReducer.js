@@ -2,7 +2,7 @@ import {
   GET_ABOUT_CONTENT_FAIL,
   GET_ABOUT_CONTENT_START,
   GET_ABOUT_CONTENT_SUCCESS
-} from "redux/aboutContent/actionTypes";
+} from "./actionTypes";
 
 const initialState = {
   isLoading: false,

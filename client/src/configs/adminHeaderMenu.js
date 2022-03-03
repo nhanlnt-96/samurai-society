@@ -12,8 +12,8 @@ export const adminHeaderMenu = [
     path: "welcome"
   },
   {
-    label: "About",
-    path: "about"
+    label: "Introducing",
+    path: "introducing"
   },
   {
     label: "Roadmap",

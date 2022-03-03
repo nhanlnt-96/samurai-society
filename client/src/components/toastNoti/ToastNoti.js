@@ -17,7 +17,7 @@ const ToastNoti = ({
           msg: "",
           titleNoti: ""
         });
-      }, 2000);
+      }, 20000);
     }
   }, [errorMsg]);
   return (

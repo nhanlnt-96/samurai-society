@@ -28,6 +28,7 @@
 
   .toast-container {
     position: fixed !important;
+    z-index: 999;
 
     .toast {
       background-color: #ffffff;

@@ -1,12 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import LeftSideImg from "../../assets/imgs/introducingImg.png";
 import BtnImg from "../../assets/icons/btn_img2.png";
 
 import "./Introducing.scss";
+import {useDispatch, useSelector} from "react-redux";
+import {getAboutContent} from "../../redux/aboutContent/aboutContentAction";
+import LoadingComp from "../loadingComp/LoadingComp";
 
 const IntroducingComp = () => {
-  return (
+  const dispatch = useDispatch();
+  const aboutContent = useSelector((state) => state.aboutContent);
+  useEffect(() => {
+    dispatch(getAboutContent());
+  }, []);
+  return aboutContent?.isLoading ? (
+    <LoadingComp/>
+  ) : (
     <Container fluid className="introducing-comp">
       <Container className="introducing-comp-container">
         <Row className="introducing-comp-content">
@@ -15,27 +25,16 @@ const IntroducingComp = () => {
                md={5}
                sm={12}
                className="introducing-left-side d-flex justify-content-center align-items-center">
-            <img src={LeftSideImg} alt=""/>
+            <img src={aboutContent?.aboutData?.imageUrl} alt={aboutContent?.aboutData?.imageName}/>
           </Col>
           <Col lg={7} md={7} sm={12} className="introducing-right-side d-flex flex-column justify-content-center">
             <div data-aos="fade-down" className="title-container">
-              <h3 className="title">
-                <em>Introducing</em>
-                <br/>
-                samurai society
-              </h3>
+              <div className="title" dangerouslySetInnerHTML={{__html: aboutContent?.aboutData?.title}}/>
             </div>
             <div className="content-container">
-              <p data-aos="fade-up">Year 3088 after many years of wars the world has agreed to dismantle all arms and
-                learn the way of the
-                samurai to defend and attack any opposing threat. Our planet is under attack from martian aliens from
-                exoplanet Kepler, they have advanced AI robots and plan on attacking and destroying humans and aliens to
-                claim earth is their own. Humans and animals have evolved and learned advanced fighting skills in
-                preparation and plan to defend themselves from the aliens and robots. Which force will you join and
-                choose wisely otherwise you won't have a home planet! #teamearth or #teamkepler</p>
-              <p data-aos="fade-up">Entering into the realm of the samurai means joining a family full of investors and
-                NFT enthusiasts who
-                believe in the future of cryptocurrencies and blockchain technology.</p>
+              <div data-aos="fade-up"
+                   className="content"
+                   dangerouslySetInnerHTML={{__html: aboutContent?.aboutData?.content}}/>
             </div>
             <div data-aos="zoom-in" className="content-btn">
               <a className="btn-item">

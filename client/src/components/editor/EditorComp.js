@@ -47,7 +47,7 @@ const EditorComp = ({
           {
             options: ["inline", "blockType", "textAlign", "colorPicker", "remove", "history"],
             colorPicker: {
-              colors: ["#f5bc58", "#49dcbd"],
+              colors: ["#f5bc58", "#49dcbd","#ffffff"],
             },
           }
         }

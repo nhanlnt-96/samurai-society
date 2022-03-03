@@ -5,6 +5,8 @@ import AdminPage from "../pages/admin/AdminPage";
 import AdminHomepage from "../pages/adminHomepage/AdminHomepage";
 import BannerEditor from "../pages/bannerEditor/BannerEditor";
 import WelcomeEditor from "../pages/welcomeEditor/WelcomeEditor";
+import IntroducingComp from "../components/introducingComp/IntroducingComp";
+import IntroducingEditor from "../pages/introducingEditor/IntroducingEditor";
 
 
 export const mainRoutes = [
@@ -37,11 +39,11 @@ export const adminRoutes = {
     {
       path: "welcome",
       module: <WelcomeEditor/>
-    }
-    // {
-    //   path: "about",
-    //   module: <AboutEditor/>,
-    // },
+    },
+    {
+      path: "introducing",
+      module: <IntroducingEditor/>,
+    },
     // {
     //   path: "roadmap",
     //   module: <RoadmapEditor/>
