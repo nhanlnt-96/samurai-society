@@ -1,24 +1,19 @@
 module.exports = (sequelize, DataTypes) => {
-  const Spot = sequelize.define("Spot", {
+  const Social = sequelize.define("Social", {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
-    imageName: {
+    socialName: {
       type: DataTypes.STRING,
       allowNull: true,
     },
-    imageUrl: {
+    socialUrl: {
       type: DataTypes.TEXT,
       unique: false,
       allowNull: true,
     },
-    description: {
-      type: DataTypes.TEXT,
-      unique: false,
-      allowNull: false,
-    },
   }, {timestamps: false});
-  return Spot;
+  return Social;
 };

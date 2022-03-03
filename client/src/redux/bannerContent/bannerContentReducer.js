@@ -2,7 +2,7 @@ import {
   GET_BANNER_CONTENT_FAIL,
   GET_BANNER_CONTENT_START,
   GET_BANNER_CONTENT_SUCCESS
-} from "redux/bannerContent/actionTypes";
+} from "./actionTypes";
 
 const initialState = {
   isLoading: false,

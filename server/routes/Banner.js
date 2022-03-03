@@ -30,7 +30,7 @@ router.post("/", validateToken, body("title").notEmpty().trim(), async (req, res
 router.patch("/update/:id", validateToken, async (req, res) => {
   const {
     title,
-    connectBtnName,
+    subTitle,
     bgImageName,
     bgImageUrl
   } = req.body;
@@ -40,7 +40,7 @@ router.patch("/update/:id", validateToken, async (req, res) => {
     if (checkContentExist) {
       await Banner.update({
         title,
-        connectBtnName,
+        subTitle,
         bgImageName,
         bgImageUrl
       }, {

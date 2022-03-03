@@ -1,10 +1,10 @@
 import React from "react";
 import {Route, Routes, Navigate} from "react-router-dom";
 import {adminRoutes, mainRoutes} from "../../configs/routes";
+import {useSelector} from "react-redux";
 
 const LayoutComp = () => {
-  // const isLogged = useSelector((state) => state.auth.isLogged);
-  const isLogged = true;
+  const isLogged = useSelector((state) => state.auth.isLogged);
   const renderComponent = (isLogged, module, isPrivate) => {
     const accessToken = localStorage.getItem("accessToken");
     if (isPrivate) {

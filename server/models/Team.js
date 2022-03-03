@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       unique: false,
       allowNull: true,
     },
-    socialUrl: {
+    position: {
       type: DataTypes.TEXT,
       unique: false,
       allowNull: true,

@@ -1,15 +1,16 @@
 module.exports = (sequelize, DataTypes) => {
-  const RoadmapDetail = sequelize.define("RoadmapDetail", {
+  const Explain = sequelize.define("Explain", {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
-    phase: {
-      type: DataTypes.STRING,
-      allowNull: false,
+    title: {
+      type: DataTypes.TEXT,
+      unique: false,
+      allowNull: true,
     },
-    phaseDesc: {
+    content:{
       type: DataTypes.TEXT,
       unique: false,
       allowNull: true,
@@ -24,5 +25,10 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
     },
   }, {timestamps: false});
-  return RoadmapDetail;
+  Explain.associate = (models) => {
+    Explain.hasMany(models.ExplainImg, {
+      onDelete: "cascade",
+    });
+  };
+  return Explain;
 };

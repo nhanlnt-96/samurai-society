@@ -26,7 +26,7 @@ export const getUserAuth = (accessToken) => {
   return async (dispatch) => {
     dispatch(getAuthStart());
     if (accessToken) {
-      await axios.get("https://monalisa-admin.herokuapp.com/user/auth", {
+      await axios.get("https://samurai-society.herokuapp.com/user/auth", {
         headers: {accessToken}
       }).then((res) => {
         dispatch(getAuthSuccess(res.data.data));

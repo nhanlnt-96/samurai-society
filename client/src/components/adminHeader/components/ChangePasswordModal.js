@@ -28,10 +28,12 @@ export const ChangePasswordModal = ({
       currentPassword: data.currentPassword,
       newPassword: data.newPassword
     }).then((res) => {
-      setIsLoading(false);
-      localStorage.removeItem("accessToken");
-      navigate("/login");
+      console.log(res);
+      // setIsLoading(false);
+      // localStorage.removeItem("accessToken");
+      // navigate("/login");
     }).catch(error => {
+      console.log(error);
       setIsLoading(false);
       setChangeFail(error.response.data.error);
     });

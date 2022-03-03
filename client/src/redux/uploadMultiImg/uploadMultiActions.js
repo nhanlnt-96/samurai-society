@@ -3,14 +3,14 @@ import {
   UPLOAD_IMAGES_FAIL,
   UPLOAD_IMAGES_START,
   UPLOAD_IMAGES_SUCCESS
-} from "redux/uploadMultiImg/actionTypes";
-import {generateFileName} from "helpers/generateFileName";
+} from "./actionTypes";
 import firebase from "firebase/compat";
 import {deleteObject, getStorage, ref} from "firebase/storage";
-import {getCollectionsContent} from "redux/collectionsContent/collectionsContentAction";
-import api from "configs/axios";
-import {getAboutContent} from "redux/aboutContent/aboutContentAction";
-import {finishUpdate} from "redux/finishUpdate/finishUpdateAction";
+import {finishUpdate} from "../finishUpdate/finishUpdateAction";
+import {generateFileName} from "../../helpers/generateFileName";
+import {getAboutContent} from "../aboutContent/aboutContentAction";
+import {getCollectionsContent} from "../collectionsContent/collectionsContentAction";
+import api from "../../configs/axios";
 
 export const uploadImgsStart = () => {
   return {

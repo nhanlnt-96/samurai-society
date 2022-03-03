@@ -7,11 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     title: {
       type: DataTypes.STRING,
-      allowNull: false,
-    },
-    subTitle: {
-      type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
   }, {timestamps: false});
   return Collections;

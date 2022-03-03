@@ -1,9 +1,9 @@
-import api from "configs/axios";
+import api from "../../configs/axios";
 import {
   GET_COLLECTIONS_CONTENT_FAIL,
   GET_COLLECTIONS_CONTENT_START,
   GET_COLLECTIONS_CONTENT_SUCCESS
-} from "redux/collectionsContent/actionTypes";
+} from "./actionTypes";
 
 export const getCollectionsContentStart = () => {
   return {

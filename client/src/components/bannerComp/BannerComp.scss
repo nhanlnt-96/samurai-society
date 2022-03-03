@@ -41,24 +41,22 @@
     padding-right: 0 !important;
   }
 
-  &-title h1 {
-    color: rgb(255, 255, 255);
+  &-title .banner-title p {
+    //color: rgb(255, 255, 255);
     font-size: 65px;
     text-align: center;
     text-transform: uppercase;
     font-family: "Rubik", sans-serif;
-
-    em {
-      -webkit-text-stroke: 1px #fff;
-      color: transparent;
-      font-style: normal;
-      font-weight: 900;
-    }
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-style: normal;
+    font-weight: 900;
 
     span {
       font-family: "Rubik", sans-serif;
       font-weight: 900;
       color: rgb(73, 220, 189);
+      -webkit-text-stroke: rgb(73, 220, 189);
     }
 
     @include mobile {
@@ -66,7 +64,7 @@
     }
   }
 
-  &-title h2 {
+  &-title .banner-subtitle {
     font-size: 22px;
     color: #ffffff;
     text-align: center;

@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const FAQDetail = sequelize.define("FAQDetail", {
+  const BenefitIntro = sequelize.define("BenefitIntro", {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -15,6 +15,11 @@ module.exports = (sequelize, DataTypes) => {
       unique: false,
       allowNull: true,
     },
+    description:{
+      type: DataTypes.TEXT,
+      unique: false,
+      allowNull: true,
+    },
   }, {timestamps: false});
-  return FAQDetail;
+  return BenefitIntro;
 };

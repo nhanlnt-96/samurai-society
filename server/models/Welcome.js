@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const Drops = sequelize.define("Drops", {
+  const Welcome = sequelize.define("Welcome", {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -7,13 +7,12 @@ module.exports = (sequelize, DataTypes) => {
     },
     title: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
-    content: {
-      type: DataTypes.TEXT,
-      unique: false,
+    subTitle: {
+      type: DataTypes.STRING,
       allowNull: true,
     },
   }, {timestamps: false});
-  return Drops;
+  return Welcome;
 };

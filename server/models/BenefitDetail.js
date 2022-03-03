@@ -1,10 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const About = sequelize.define("About", {
-    title: {
-      type: DataTypes.TEXT,
-      unique: false,
-      allowNull: true,
-    },
+  const BenefitDetail = sequelize.define("BenefitDetail", {
     content: {
       type: DataTypes.TEXT,
       unique: false,
@@ -20,5 +15,5 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
     },
   }, {timestamps: false});
-  return About;
+  return BenefitDetail;
 };

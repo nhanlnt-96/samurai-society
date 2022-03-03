@@ -1,5 +1,5 @@
-import {FINISH_UPDATE} from "redux/finishUpdate/actionTypes";
-import {uploadedImgsToDb} from "redux/uploadMultiImg/uploadMultiActions";
+import {FINISH_UPDATE} from "./actionTypes";
+import {uploadedImgsToDb} from "../uploadMultiImg/uploadMultiActions";
 
 export const finishUpdate = (status) => {
   return {

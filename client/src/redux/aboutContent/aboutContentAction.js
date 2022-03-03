@@ -1,9 +1,9 @@
-import api from "configs/axios";
+import api from "../../configs/axios";
 import {
   GET_ABOUT_CONTENT_FAIL,
   GET_ABOUT_CONTENT_START,
   GET_ABOUT_CONTENT_SUCCESS
-} from "redux/aboutContent/actionTypes";
+} from "./actionTypes";
 
 export const getAboutContentStart = () => {
   return {

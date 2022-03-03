@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Parallax} from "react-parallax";
 import HeaderComp from "../headerComp/HeaderComp";
 import {Col, Container, Row} from "react-bootstrap";
@@ -8,11 +8,14 @@ import MintBox from "../mintBox/MintBox";
 import {connect} from "../../redux/blockchain/blockchainActions";
 import {fetchData} from "../../redux/data/dataActions";
 import ToastNoti from "../toastNoti/ToastNoti";
+import {getBannerContent} from "../../redux/bannerContent/bannerContentAction";
 
 import "./BannerComp.scss";
+import LoadingComp from "../loadingComp/LoadingComp";
 
 const BannerComp = () => {
   const dispatch = useDispatch();
+  const bannerContent = useSelector((state) => state.bannerContent);
   const blockchain = useSelector((state) => state.blockchain);
   const getData = () => {
     if (blockchain.account !== "" && blockchain.smartContract !== null) {
@@ -24,8 +27,13 @@ const BannerComp = () => {
     dispatch(connect());
     getData();
   };
-  return (
-    <Parallax bgImage={Banner} strength={500} className="banner-comp">
+  useEffect(() => {
+    dispatch(getBannerContent());
+  }, []);
+  return bannerContent?.isLoading ? (
+    <LoadingComp/>
+  ) : (
+    <Parallax bgImage={bannerContent.bannerData?.bgImageUrl} strength={500} className="banner-comp">
       <HeaderComp connectWallet={connectWalletBtnClick}/>
       <div className="bg-blur"/>
       <Container fluid className="banner-comp-container d-flex flex-column justify-content-center align-items-center">
@@ -35,12 +43,12 @@ const BannerComp = () => {
                  md={blockchain.account ? 6 : 12}
                  sm={12}
                  className="banner-comp-title d-flex flex-column justify-content-center align-items-center">
-              <h1 data-aos="fade-up">
-                <em>Welcome to</em>
-                <br/>
-                <span>The Samurai Society!</span>
-              </h1>
-              <h2 data-aos="fade-up">Which team will you join? Team Earth or Team Kepler</h2>
+              <div className="banner-title"
+                   data-aos="fade-up"
+                   dangerouslySetInnerHTML={{__html: bannerContent.bannerData?.title}}/>
+              <div className="banner-subtitle"
+                   data-aos="fade-up"
+                   dangerouslySetInnerHTML={{__html: bannerContent.bannerData?.subTitle}}/>
             </Col>
             {
               blockchain.account && (

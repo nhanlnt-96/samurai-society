@@ -1,9 +1,6 @@
-import {
-  GET_BANNER_CONTENT_FAIL,
-  GET_BANNER_CONTENT_START,
-  GET_BANNER_CONTENT_SUCCESS
-} from "redux/bannerContent/actionTypes";
-import api from "configs/axios";
+import {GET_BANNER_CONTENT_FAIL, GET_BANNER_CONTENT_START, GET_BANNER_CONTENT_SUCCESS} from "./actionTypes";
+import api from "../../configs/axios";
+
 
 export const getBannerContentStart = () => {
   return {

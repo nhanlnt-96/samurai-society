@@ -4,13 +4,14 @@ import blockchainReducer from "./blockchain/blockchainReducer";
 import dataReducer from "./data/dataReducer";
 import authReducer from "./auth/authReducer";
 import getAuthReducer from "./getAuth/getAuthReducer";
+import bannerContentReducer from "./bannerContent/bannerContentReducer";
 
 const rootReducer = combineReducers({
   blockchain: blockchainReducer,
   data: dataReducer,
   auth: authReducer,
   getAuth: getAuthReducer,
-  // bannerContent: bannerContentReducer,
+  bannerContent: bannerContentReducer,
   // finishUpdate: finishUpdateReducer,
   // aboutContent: aboutContentReducer,
   // roadmapContent: roadmapContentReducer,

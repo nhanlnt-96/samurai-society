@@ -34,15 +34,6 @@ app.use("/team", teamRouter);
 const collectionsRouter = require("./routes/Collections");
 app.use("/collections", collectionsRouter);
 
-const spotRouter = require("./routes/Spot");
-app.use("/spot", spotRouter);
-
-const featureRouter = require("./routes/Feature");
-app.use("/specs", featureRouter);
-
-const dropsRouter = require("./routes/Drops");
-app.use("/drops", dropsRouter);
-
 db.sequelize.sync().then(() => {
   app.listen((process.env.PORT || 3001), () => {
     console.log(`Server is running on port 3001`);

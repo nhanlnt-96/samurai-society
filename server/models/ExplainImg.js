@@ -1,5 +1,10 @@
 module.exports = (sequelize, DataTypes) => {
-  const AboutImg = sequelize.define("AboutImg", {
+  const ExplainImg = sequelize.define("ExplainImg", {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     imageName: {
       type: DataTypes.STRING,
       allowNull: true,
@@ -10,5 +15,5 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
     },
   }, {timestamps: false});
-  return AboutImg;
+  return ExplainImg;
 };

@@ -3,7 +3,7 @@ import {
   UPLOAD_IMAGES_FAIL,
   UPLOAD_IMAGES_START,
   UPLOAD_IMAGES_SUCCESS
-} from "redux/uploadMultiImg/actionTypes";
+} from "./actionTypes";
 
 const initialState = {
   isLoading: false,
