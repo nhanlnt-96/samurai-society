@@ -21,7 +21,7 @@ const FaqComp = () => {
           <Accordion className="accordion-container">
             {
               faqData.map((val, index) => (
-                <Accordion.Item data-aos="zoom-in" eventKey={`${index}`}>
+                <Accordion.Item key={index} data-aos="zoom-in" eventKey={`${index}`}>
                   <Accordion.Header className="accordion-header-custom">{val.question}</Accordion.Header>
                   <Accordion.Body className="accordion-body-custom">{val.answer}</Accordion.Body>
                 </Accordion.Item>
