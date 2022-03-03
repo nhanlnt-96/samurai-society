@@ -13,11 +13,14 @@ app.get("/", (req, res) => {
   res.send("Welcome to our server");
 });
 
+const userRouter = require("./routes/User");
+app.use("/user", userRouter);
+
 const bannerRouter = require("./routes/Banner");
 app.use("/banner", bannerRouter);
 
-const userRouter = require("./routes/User");
-app.use("/user", userRouter);
+const welcomeRouter = require("./routes/Welcome");
+app.use("/welcome", welcomeRouter);
 
 const aboutRouter = require("./routes/About");
 app.use("/about", aboutRouter);

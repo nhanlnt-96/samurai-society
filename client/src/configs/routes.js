@@ -4,6 +4,7 @@ import PageNotFound from "../pages/pageNotFound/PageNotFound";
 import AdminPage from "../pages/admin/AdminPage";
 import AdminHomepage from "../pages/adminHomepage/AdminHomepage";
 import BannerEditor from "../pages/bannerEditor/BannerEditor";
+import WelcomeEditor from "../pages/welcomeEditor/WelcomeEditor";
 
 
 export const mainRoutes = [
@@ -33,6 +34,10 @@ export const adminRoutes = {
       path: "banner",
       module: <BannerEditor/>,
     },
+    {
+      path: "welcome",
+      module: <WelcomeEditor/>
+    }
     // {
     //   path: "about",
     //   module: <AboutEditor/>,

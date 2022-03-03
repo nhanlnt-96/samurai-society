@@ -56,7 +56,7 @@
       font-family: "Rubik", sans-serif;
       font-weight: 900;
       color: rgb(73, 220, 189);
-      -webkit-text-stroke: rgb(73, 220, 189);
+      -webkit-text-stroke: 0 #ffffff;
     }
 
     @include mobile {

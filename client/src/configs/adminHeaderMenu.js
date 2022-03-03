@@ -8,6 +8,10 @@ export const adminHeaderMenu = [
     path: "banner"
   },
   {
+    label: "Welcome",
+    path: "welcome"
+  },
+  {
     label: "About",
     path: "about"
   },
