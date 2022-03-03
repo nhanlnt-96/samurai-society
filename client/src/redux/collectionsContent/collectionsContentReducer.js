@@ -2,7 +2,7 @@ import {
   GET_COLLECTIONS_CONTENT_FAIL,
   GET_COLLECTIONS_CONTENT_START,
   GET_COLLECTIONS_CONTENT_SUCCESS
-} from "redux/collectionsContent/actionTypes";
+} from "./actionTypes";
 
 const initialState = {
   isLoading: false,

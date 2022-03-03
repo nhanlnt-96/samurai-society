@@ -7,6 +7,7 @@ import BannerEditor from "../pages/bannerEditor/BannerEditor";
 import WelcomeEditor from "../pages/welcomeEditor/WelcomeEditor";
 import IntroducingComp from "../components/introducingComp/IntroducingComp";
 import IntroducingEditor from "../pages/introducingEditor/IntroducingEditor";
+import SubBannerEditor from "../pages/subBannerEditor/SubBannerEditor";
 
 
 export const mainRoutes = [
@@ -44,6 +45,10 @@ export const adminRoutes = {
       path: "introducing",
       module: <IntroducingEditor/>,
     },
+    {
+      path: "collections",
+      module: <SubBannerEditor/>
+    },
     // {
     //   path: "roadmap",
     //   module: <RoadmapEditor/>
@@ -51,10 +56,6 @@ export const adminRoutes = {
     // {
     //   path: "spot",
     //   module: <SpotEditor/>
-    // },
-    // {
-    //   path: "collections",
-    //   module: <CollectionsEditor/>
     // },
     // {
     //   path: "the-specs",

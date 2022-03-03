@@ -7,6 +7,9 @@ import getAuthReducer from "./getAuth/getAuthReducer";
 import bannerContentReducer from "./bannerContent/bannerContentReducer";
 import welcomeContentReducer from "./welcomeContent/welcomeContentReducer";
 import aboutContentReducer from "./aboutContent/aboutContentReducer";
+import collectionsContentReducer from "./collectionsContent/collectionsContentReducer";
+import finishUpdateReducer from "./finishUpdate/finishUpdateReducer";
+import uploadMultiImgReducer from "./uploadMultiImg/uploadMultiImgReducer";
 
 const rootReducer = combineReducers({
   blockchain: blockchainReducer,
@@ -16,12 +19,12 @@ const rootReducer = combineReducers({
   bannerContent: bannerContentReducer,
   welcomeContent: welcomeContentReducer,
   aboutContent: aboutContentReducer,
-  // finishUpdate: finishUpdateReducer,
+  collectionsContent: collectionsContentReducer,
+  finishUpdate: finishUpdateReducer,
   // roadmapContent: roadmapContentReducer,
   // faqContent: faqContentReducer,
   // teamContent: teamContentReducer,
-  // collectionsContent: collectionsContentReducer,
-  // uploadedImgsData: uploadMultiImgReducer,
+  uploadedImgsData: uploadMultiImgReducer,
 });
 
 const middleware = [thunk];

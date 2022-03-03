@@ -25,6 +25,9 @@ app.use("/welcome", welcomeRouter);
 const aboutRouter = require("./routes/About");
 app.use("/about", aboutRouter);
 
+const collectionsRouter = require("./routes/Collections");
+app.use("/collections", collectionsRouter);
+
 const roadmapRouter = require("./routes/Roadmap");
 app.use("/roadmap", roadmapRouter);
 
@@ -33,9 +36,6 @@ app.use("/faq", faqRouter);
 
 const teamRouter = require("./routes/Team");
 app.use("/team", teamRouter);
-
-const collectionsRouter = require("./routes/Collections");
-app.use("/collections", collectionsRouter);
 
 db.sequelize.sync().then(() => {
   app.listen((process.env.PORT || 3001), () => {

@@ -16,12 +16,12 @@ export const adminHeaderMenu = [
     path: "introducing"
   },
   {
-    label: "Roadmap",
-    path: "roadmap"
-  },
-  {
     label: "Collections",
     path: "collections"
+  },
+  {
+    label: "Roadmap",
+    path: "roadmap"
   },
   {
     label: "Team",

@@ -15,19 +15,16 @@ const {validateToken} = require("../middleware/authentication");
 
 const router = express.Router();
 
-router.post("/general", validateToken, async (req, res) => {
+router.post("/general", validateToken, body("title").notEmpty().trim(), async (req, res) => {
+  const errors = validationResult(req);
   const post = req.body;
   try {
-    const {
-      title,
-      subTitle
-    } = post;
-    if (title || subTitle) {
+    if (errors.isEmpty()) {
       await Collections.create(post);
+      ApiSuccess(201, post, res);
     } else {
       ApiError(400, "Collection's content can not empty.", res);
     }
-    ApiSuccess(201, post, res);
   } catch (error) {
     ApiError(400, error, res);
   }
@@ -51,7 +48,6 @@ router.post("/images", validateToken, body("imageName").notEmpty().trim(), body(
 router.patch("/update/:id", validateToken, async (req, res) => {
   const {
     title,
-    subTitle,
   } = req.body;
   const contentId = req.params.id;
   const checkContentExist = await Collections.findByPk(contentId);
@@ -60,7 +56,6 @@ router.patch("/update/:id", validateToken, async (req, res) => {
     if (checkContentExist) {
       await Collections.update({
         title,
-        subTitle
       }, {
         where: {id: contentId},
         returning: true,

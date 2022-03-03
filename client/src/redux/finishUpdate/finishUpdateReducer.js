@@ -1,4 +1,4 @@
-import {FINISH_UPDATE} from "redux/finishUpdate/actionTypes";
+import {FINISH_UPDATE} from "./actionTypes";
 
 const initialState = {
   isFinishUpdate: false
