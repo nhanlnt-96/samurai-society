@@ -10,16 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       unique: false,
       allowNull: true,
     },
-    content:{
-      type: DataTypes.TEXT,
-      unique: false,
-      allowNull: true,
-    },
-    imageName: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    imageUrl: {
+    content: {
       type: DataTypes.TEXT,
       unique: false,
       allowNull: true,
