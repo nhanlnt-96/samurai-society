@@ -1,10 +1,10 @@
 import React from "react";
-import {Container, Row} from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import BannerComp from "../../components/bannerComp/BannerComp";
 import WelcomeComp from "../../components/welcomeComp/WelcomeComp";
 import IntroducingComp from "../../components/introducingComp/IntroducingComp";
 import SubBannerComp from "../../components/subBannerComp/SubBannerComp";
-import NftExplainComp from "../../components/nftExplainComp/NftExplainComp";
+import Membership from "../../components/membershipComp/Membership";
 import BenefitsComp from "../../components/benefitsComp/BenefitsComp";
 import RoadmapComp from "../../components/roadmapComp/RoadmapComp";
 import TeamComp from "../../components/teamComp/TeamComp";
@@ -12,40 +12,42 @@ import FaqComp from "../../components/faqComp/FaqComp";
 
 const Homepage = () => {
   return (
-    <Container fluid
-               className="main-layout"
-               style={{
-                 paddingLeft: 0,
-                 paddingRight: 0,
-                 backgroundColor: "rgb(48, 51, 75)",
-                 overflow: "hidden"
-               }}>
+    <Container
+      fluid
+      className="main-layout"
+      style={{
+        paddingLeft: 0,
+        paddingRight: 0,
+        backgroundColor: "rgb(48, 51, 75)",
+        overflow: "hidden",
+      }}
+    >
       <Row id="home">
-        <BannerComp/>
+        <BannerComp />
       </Row>
       <Row id="welcome">
-        <WelcomeComp/>
+        <WelcomeComp />
       </Row>
       <Row id="introducing">
-        <IntroducingComp/>
+        <IntroducingComp />
       </Row>
       <Row>
-        <SubBannerComp/>
+        <SubBannerComp />
       </Row>
       <Row id="nft-explain">
-        <NftExplainComp/>
+        <Membership />
       </Row>
       <Row id="benefit">
-        <BenefitsComp/>
+        <BenefitsComp />
       </Row>
       <Row id="roadmap">
-        <RoadmapComp/>
+        <RoadmapComp />
       </Row>
       <Row id="team">
-        <TeamComp/>
+        <TeamComp />
       </Row>
       <Row id="faq">
-        <FaqComp/>
+        <FaqComp />
       </Row>
     </Container>
   );
