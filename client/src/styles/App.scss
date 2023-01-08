@@ -11,62 +11,11 @@
   min-height: 100vh;
 }
 
-.editor {
-  font-family: "Poppins", sans-serif !important;
-  min-height: calc(100vh - 48px);
-
-  &-container {
-    height: 100%;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    overflow: hidden;
-  }
-
-  @include mobile {
-    min-height: calc(100vh - 54px);
-  }
-}
-
-.editor-container {
-  .editor-item {
-    .select-part-button-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .select-part-button-item {
-      border: none;
-      outline: none;
-      padding: 12px;
-      color: #ffffff;
-      transition: .2s linear;
-
-      &:hover {
-        background-color: #1e3799 !important;
-      }
-    }
-  }
-
-  .select-part-button-item-active {
-    background-color: #1e3799 !important;
-  }
-
-  .editor-comp-edit {
-    padding: 12px;
-  }
-
-  .editor-top-container {
-    margin: 24px 0;
-  }
-
-  .editor-update-button {
-    margin-bottom: 24px;
-  }
-}
-
-.editor-preview-bg {
-  background-color: rgb(48, 51, 75);
+.gif-bg {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: url("../assets/gif-bg.gif") repeat-x center;
+  background-size: contain;
 }

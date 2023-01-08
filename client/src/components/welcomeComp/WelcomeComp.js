@@ -1,35 +1,26 @@
-import React, {useEffect} from "react";
-import {Container, Row} from "react-bootstrap";
-import {useDispatch, useSelector} from "react-redux";
+import React from "react";
+import { Container, Row } from "react-bootstrap";
 import BtnIcon from "../../assets/icons/btn_img3.png";
-import {getWelcomeContent} from "../../redux/welcomeContent/welcomeContentAction";
-import LoadingComp from "../loadingComp/LoadingComp";
-
 import "./WelcomeComp.scss";
 
 const WelcomeComp = () => {
-  const dispatch = useDispatch();
-  const welcomeContent = useSelector((state) => state.welcomeContent);
-  useEffect(() => {
-    dispatch(getWelcomeContent());
-  }, []);
-  return welcomeContent.isLoading ? (
-    <LoadingComp/>
-  ) : (
+  return (
     <Container fluid className="welcome-comp">
       <Container className="welcome-comp-container d-flex flex-column justify-content-center align-items-center">
         <Row className="welcome-comp-content">
-          <div data-aos="fade-up"
-               className="title"
-               dangerouslySetInnerHTML={{__html: welcomeContent.welcomeData?.title}}/>
-          <div data-aos="fade-up"
-               className="sub-title"
-               dangerouslySetInnerHTML={{__html: welcomeContent.welcomeData?.subTitle}}/>
+          <h6 data-aos="fade-up" className="title aos-init aos-animate">
+            Lorem ipsum dolor sit amet, consectetur.
+          </h6>
+          <p data-aos="fade-up" className="sub-title aos-init aos-animate">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+            cupiditate esse ex illum incidunt omnis provident sit, suscipit
+            voluptatem? Incidunt.
+          </p>
         </Row>
         <Row className="welcome-comp-button">
           <button data-aos="zoom-in" className="button-item">
             <span>view all collection</span>
-            <img src={BtnIcon} alt=""/>
+            <img src={BtnIcon} alt="" />
           </button>
         </Row>
       </Container>

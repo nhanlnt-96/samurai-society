@@ -5,23 +5,23 @@ import TeamMember4 from "../assets/imgs/team/teamMember4.png";
 
 export const teamMemberData = [
   {
-    name: "Mr. Jbarah",
-    position: "Creator and founder",
-    ava: TeamMember1
+    name: "Mr. Lorem",
+    position: "Lorem ipsum dolor.",
+    ava: TeamMember1,
   },
   {
-    name: "Mr. Mudassir",
-    position: "Admin and story line analyst",
-    ava: TeamMember2
+    name: "Mr. Lorem",
+    position: "Lorem ipsum dolor.",
+    ava: TeamMember2,
   },
   {
-    name: "Mr. Tamir",
-    position: "Developer",
-    ava: TeamMember3
+    name: "Mr. Lorem",
+    position: "Lorem ipsum dolor.",
+    ava: TeamMember3,
   },
   {
-    name: "Ms. Jimena",
-    position: "Artist",
-    ava: TeamMember4
-  }
+    name: "Ms. Lorem",
+    position: "Lorem ipsum dolor.",
+    ava: TeamMember4,
+  },
 ];

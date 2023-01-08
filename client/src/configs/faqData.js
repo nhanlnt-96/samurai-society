@@ -1,21 +1,27 @@
 export const faqData = [
   {
-    question: "Where will I be able to see my samurai society NFT?",
-    answer: ["Once you have minted a samurai you will be able to view it on Opensea by connecting your metamask."]
-  },
-  {
-    question: "When is the official launch?",
-    answer: ["The official launch will be estimated in March stay tuned on instagram/twitter/discord for further updates."]
-  },
-  {
-    question: "What will be the price?",
+    question: "Lorem ipsum dolor sit amet?",
     answer: [
-      "For our exclusive private sale it will be .2 eth + gas fees.", "For our public sale it will be .3 eth + gas" +
-      "  fees."
-    ]
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet dolor eligendi eos harum ipsum nobis repudiandae tempore ullam.",
+    ],
   },
   {
-    question: "How do I join the private sale?",
-    answer: ["To join the private sale you have to be active in our discord group and you will be automatically joined in our private sale."]
+    question: "Lorem ipsum dolor sit amet?",
+    answer: [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet dolor eligendi eos harum ipsum nobis repudiandae tempore ullam.",
+    ],
+  },
+  {
+    question: "Lorem ipsum dolor sit amet?",
+    answer: [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet dolor eligendi eos harum ipsum nobis repudiandae tempore ullam.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet dolor eligendi eos harum ipsum nobis repudiandae tempore ullam.",
+    ],
+  },
+  {
+    question: "Lorem ipsum dolor sit amet?",
+    answer: [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet dolor eligendi eos harum ipsum nobis repudiandae tempore ullam.",
+    ],
   },
 ];
