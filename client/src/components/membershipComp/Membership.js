@@ -2,15 +2,15 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { nftExplainData } from "../../configs/nftExplainData";
 
-import "./NftExplainComp.scss";
+import "./Membership.scss";
 
-const NftExplainComp = () => {
+const Membership = () => {
   return (
-    <Container fluid className="nft-explain-comp">
-      <Container className="nft-explain-container d-flex flex-column justify-content-center align-items-center">
-        <div data-aos="fade-down" className="nft-explain-title">
+    <Container fluid className="membership-comp">
+      <Container className="membership-container d-flex flex-column justify-content-center align-items-center">
+        <div data-aos="fade-down" className="membership-title">
           <h3>
-            <em>NFT</em> explain
+            <em>Member</em>ship
           </h3>
         </div>
         <div className="card-container d-flex justify-content-center align-items-center flex-wrap">
@@ -37,4 +37,4 @@ const NftExplainComp = () => {
   );
 };
 
-export default NftExplainComp;
+export default Membership;

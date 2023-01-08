@@ -1,6 +1,6 @@
 @import "../../styles/rwd";
 
-.nft-explain {
+.membership {
   &-comp {
     padding: 24px 0 !important;
   }
@@ -23,7 +23,7 @@
   }
 }
 
-.nft-explain-container .nft-explain-title h3 {
+.membership-container .membership-title h3 {
   color: #fff;
   margin: 0 0 10px;
   font-family: 'Rubik', sans-serif !important;
@@ -40,7 +40,7 @@
   }
 }
 
-.nft-explain-container .card-container .card {
+.membership-container .card-container .card {
   position: relative;
   width: 350px;
   height: 520px;
