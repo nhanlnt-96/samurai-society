@@ -11,24 +11,48 @@ export const nftExplainData = [
     img: [Alien],
     imgName: "Lorem",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, at consequuntur cupiditate deleniti distinctio libero minima quae quibusdam sed sint?",
+      "Take 25% off VVS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (Non GIA)",
   },
   {
     img: [Robot],
     imgName: "Lorem",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, at consequuntur cupiditate deleniti distinctio libero minima quae quibusdam sed sint?",
+      "Take 20% off VS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (Non GIA)",
   },
   {
     img: [Bunny, Lion, Bear, Ape],
     imgName: "Lorem",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, at consequuntur cupiditate deleniti distinctio libero minima quae quibusdam sed sint?",
+      "Take 15% off Si clarity diamonds (loose) – any color according to vendors/retailers’ price per carat (Non GIA)",
   },
   {
     img: [Human],
     imgName: "Lorem",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, at consequuntur cupiditate deleniti distinctio libero minima quae quibusdam sed sint?",
+      "Take 35% off VVS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (GIA Certified)",
+  },
+  {
+    img: [Human],
+    imgName: "Lorem",
+    content:
+      "Take 30% off VS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (GIA Certified)",
+  },
+  {
+    img: [Lion],
+    imgName: "Lorem",
+    content:
+      "Take 25% off Si clarity diamonds (loose) – any color according to vendors/retailers’ price per carat (GIA Certified)",
+  },
+  {
+    img: [Bear],
+    imgName: "Lorem",
+    content:
+      "Take 20% off all custom jewelry according to vendors/retailers’ price (natural diamonds, gold 10k-22k, enamel)",
+  },
+  {
+    img: [Bunny],
+    imgName: "Lorem",
+    content:
+      "Rewards:  1 carat VVS reward for Rare Ape adoption – delivered to door (Purchase of Rare Ice Ape NFT)",
   },
 ];

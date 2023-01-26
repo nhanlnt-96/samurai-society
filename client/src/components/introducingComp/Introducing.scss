@@ -61,6 +61,20 @@
         margin-top: 12px;
       }
     }
+
+    .read-more-btn {
+      border: none;
+      outline: none;
+      margin-top: 12px;
+      background-color: transparent;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 20px;
+
+      &:hover {
+        color: #F5BC58;
+      }
+    }
   }
 
   .content-btn {

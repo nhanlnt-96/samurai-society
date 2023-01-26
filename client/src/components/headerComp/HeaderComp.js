@@ -22,11 +22,7 @@ const HeaderComp = ({ connectWallet }) => {
       </Container>
       <Container className="header-comp-container">
         <Navbar.Brand href="#home" className="header-comp-mobile-screen">
-          {/*<img src={Logo} alt="bored-bunny"/>*/}
-          <img
-            src={"https://dummyimage.com/150x95/000/fff&text=logo-here"}
-            alt="bored-bunny"
-          />
+          <img src={Logo} alt="bored-bunny" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -53,11 +49,7 @@ const HeaderComp = ({ connectWallet }) => {
             </Nav.Link>
           </Nav>
           <Navbar.Brand href="#home" className="navbar-logo">
-            {/*<img src={Logo} alt="bored-bunny"/>*/}
-            <img
-              src={"https://dummyimage.com/150x95/000/fff&text=logo-here"}
-              alt="bored-bunny"
-            />
+            <img src={Logo} alt="bored-bunny" />
           </Navbar.Brand>
           <Nav className="right-side-menu">
             <Nav.Link href="#roadmap" className="menu-item">
