@@ -6,7 +6,7 @@ import "./styles/App.scss";
 function App() {
   return (
     <>
-      <div className="gif-bg"></div>
+      {/*<div className="gif-bg"></div>*/}
       <MainLayout />
     </>
   );

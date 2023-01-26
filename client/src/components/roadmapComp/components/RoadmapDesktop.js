@@ -13,9 +13,8 @@ export const RoadmapDesktop = () => {
           <div className="home_road_map_text">
             <h3>Phase 1</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Accusamus eius facilis illo illum magni numquam praesentium
-              provident repellat totam voluptate?
+              Pre-Marketing, Mint date announcement release, Discord and website
+              launch, Twitter Spaces.
             </p>
           </div>
         </div>
@@ -26,11 +25,7 @@ export const RoadmapDesktop = () => {
         >
           <div className="home_road_map_text">
             <h3>Phase 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Accusamus eius facilis illo illum magni numquam praesentium
-              provident repellat totam voluptate?
-            </p>
+            <p>NFT List for sale</p>
           </div>
         </div>
         <div
@@ -41,9 +36,8 @@ export const RoadmapDesktop = () => {
           <div className="home_road_map_text">
             <h3>Phase 5</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Accusamus eius facilis illo illum magni numquam praesentium
-              provident repellat totam voluptate?
+              Token, Physical Diamond and Gold Retail sales from retail stores
+              and distributor and Reward distributions.
             </p>
           </div>
         </div>
@@ -61,11 +55,7 @@ export const RoadmapDesktop = () => {
         >
           <div className="home_road_map_text">
             <h3>Phase 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Accusamus eius facilis illo illum magni numquam praesentium
-              provident repellat totam voluptate?
-            </p>
+            <p>Minting, Marketing, Collaborations on social media</p>
           </div>
         </div>
         <div
@@ -75,11 +65,7 @@ export const RoadmapDesktop = () => {
         >
           <div className="home_road_map_text">
             <h3>Phase 4</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Accusamus eius facilis illo illum magni numquam praesentium
-              provident repellat totam voluptate?
-            </p>
+            <p>Merchandise, Exclusive collectables, Metaverse event.</p>
           </div>
         </div>
       </div>
