@@ -14,7 +14,7 @@ const SubBannerComp = () => {
           </div>
         ))}
         <div className="sub-banner-text">
-          <h3>Lorem ipsum.</h3>
+          <h3>iceapes</h3>
         </div>
       </div>
     </Container>

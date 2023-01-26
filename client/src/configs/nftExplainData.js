@@ -9,49 +9,49 @@ import Human from "../assets/imgs/nftExplain/human.png";
 export const nftExplainData = [
   {
     img: [Alien],
-    imgName: "Lorem",
+    imgName: "",
     content:
       "Take 25% off VVS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (Non GIA)",
   },
   {
     img: [Robot],
-    imgName: "Lorem",
+    imgName: "",
     content:
       "Take 20% off VS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (Non GIA)",
   },
   {
     img: [Bunny, Lion, Bear, Ape],
-    imgName: "Lorem",
+    imgName: "",
     content:
       "Take 15% off Si clarity diamonds (loose) – any color according to vendors/retailers’ price per carat (Non GIA)",
   },
   {
     img: [Human],
-    imgName: "Lorem",
+    imgName: "",
     content:
       "Take 35% off VVS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (GIA Certified)",
   },
   {
     img: [Human],
-    imgName: "Lorem",
+    imgName: "",
     content:
       "Take 30% off VS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (GIA Certified)",
   },
   {
     img: [Lion],
-    imgName: "Lorem",
+    imgName: "",
     content:
       "Take 25% off Si clarity diamonds (loose) – any color according to vendors/retailers’ price per carat (GIA Certified)",
   },
   {
     img: [Bear],
-    imgName: "Lorem",
+    imgName: "",
     content:
       "Take 20% off all custom jewelry according to vendors/retailers’ price (natural diamonds, gold 10k-22k, enamel)",
   },
   {
     img: [Bunny],
-    imgName: "Lorem",
+    imgName: "",
     content:
       "Rewards:  1 carat VVS reward for Rare Ape adoption – delivered to door (Purchase of Rare Ice Ape NFT)",
   },

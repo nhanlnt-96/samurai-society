@@ -44,7 +44,7 @@ const BannerComp = () => {
               <h1 data-aos="fade-up" className="aos-init aos-animate">
                 <em>Welcome to</em>
                 <br />
-                <span>Lorem ipsum dolor!</span>
+                <span>iceapes</span>
               </h1>
               <h2 data-aos="fade-up" className="aos-init aos-animate">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
