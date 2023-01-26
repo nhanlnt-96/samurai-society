@@ -30,7 +30,8 @@
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "deploy": "yarn build && firebase deploy"
   },
   "browserslist": {
     "production": [
