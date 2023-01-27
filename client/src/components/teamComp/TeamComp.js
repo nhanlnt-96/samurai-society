@@ -18,7 +18,7 @@ const TeamComp = () => {
         <div className="team-comp-content">
           {
             teamMemberData.map((val, index) => (
-              <div key={index} data-aos="zoom-in" className="team-item-container">
+              <div key={index} className="team-item-container">
                 <div className="team-ava">
                   <img src={val.ava} alt="bored-bunny-team"/>
                 </div>

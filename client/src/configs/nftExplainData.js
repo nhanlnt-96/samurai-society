@@ -10,38 +10,32 @@ export const nftExplainData = [
   {
     img: [Alien],
     imgName: "",
-    content:
-      "Take 25% off VVS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (Non GIA)",
+    content: "Take 25% off VVS clarity diamonds (loose)",
   },
   {
     img: [Robot],
     imgName: "",
-    content:
-      "Take 20% off VS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (Non GIA)",
+    content: "Take 20% off VS clarity diamonds (loose)",
   },
   {
     img: [Bunny, Lion, Bear, Ape],
     imgName: "",
-    content:
-      "Take 15% off Si clarity diamonds (loose) – any color according to vendors/retailers’ price per carat (Non GIA)",
+    content: "Take 15% off Si clarity diamonds (loose)",
   },
   {
     img: [Human],
     imgName: "",
-    content:
-      "Take 35% off VVS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (GIA Certified)",
+    content: "Take 35% off VVS clarity diamonds (loose)",
   },
   {
     img: [Human],
     imgName: "",
-    content:
-      "Take 30% off VS clarity diamonds (loose) – Color DEF, according to vendors/retailers’ price per carat (GIA Certified)",
+    content: "Take 30% off VS clarity diamonds (loose)",
   },
   {
     img: [Lion],
     imgName: "",
-    content:
-      "Take 25% off Si clarity diamonds (loose) – any color according to vendors/retailers’ price per carat (GIA Certified)",
+    content: "Take 25% off Si clarity diamonds (loose)",
   },
   {
     img: [Bear],

@@ -1,7 +1,7 @@
 @import "../../styles/rwd";
 
 .team-comp {
-  min-height: 100vh;
+  //min-height: 100vh;
 
   &-container {
     height: 100%;
@@ -28,10 +28,10 @@
 
 .team-comp-container .team-comp-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 12px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 24px;
 
   .team-ava {
@@ -42,11 +42,11 @@
 
   .team-info-container {
     width: 100%;
-    height: 100px;
+    //height: 100px;
     margin-top: 12px;
     padding: 12px;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    //display: grid;
+    //grid-template-rows: repeat(2, 1fr);
 
     .position, .name {
       color: #ffffff;
@@ -69,5 +69,8 @@
   @include mobile {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 24px;
+  }
+  @include tablet{
+    grid-template-columns: repeat(2, 1fr);
   }
 }

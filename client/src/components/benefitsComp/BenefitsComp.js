@@ -20,11 +20,16 @@ const BenefitsComp = () => {
               <ImQuotesLeft />
             </div>
             <div className="content-container d-flex flex-column justify-content-center align-items-center">
-              <h3 className="question">Lorem ipsum dolor sit amet.</h3>
+              <h3 className="question">
+                Our Ice Ape NFT’s gives you exclusive entry to a real-world
+                experience.
+              </h3>
               <p className="answer">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nesciunt odio praesentium repellat ut voluptas. Consequatur est
-                fugit praesentium quos rerum.
+                Some ICE APE nfts will serve as proof to get you a discount from
+                retailers, and our Rare NFTs will serve as a gift system and
+                rewards you a physical diamond. When you purchase an ICE APE or
+                RARE ICE APE nft, you automatically become a member of our
+                DIAMOND CLUB.
               </p>
             </div>
             <div className="right-icon icon-position">
@@ -33,7 +38,7 @@ const BenefitsComp = () => {
           </div>
         </Row>
         <Row className="benefit-comp-detail">
-          <h3 className="title">Lorem ipsum dolor sit amet, consectetur.</h3>
+          {/*<h3 className="title">Lorem ipsum dolor sit amet, consectetur.</h3>*/}
           <div className="benefit-detail-container">
             {benefitContentData.map((val, index) => (
               <div key={index} className="detail-item">

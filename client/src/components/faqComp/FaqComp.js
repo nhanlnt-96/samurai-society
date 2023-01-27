@@ -38,8 +38,8 @@ const FaqComp = () => {
         <Row className="faq-comp-social">
           <Col lg={6} md={6} sm={12} className="social-container">
             <img src={Email} alt="" />
-            <a href="mailto:lorem@lorem.com" className="social-item">
-              lorem@lorem.com
+            <a href="mailto:alpha@iceapenft.com" className="social-item">
+              alpha@iceapenft.com
             </a>
           </Col>
           <Col lg={6} md={6} sm={12} className="social-container">
