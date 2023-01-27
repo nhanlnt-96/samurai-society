@@ -29,13 +29,19 @@
 
 .home_road_map_text h3 {
   font-size: 25px;
-  margin: 0 0 12px;
+  //margin: 0 0 12px;
   color: #fff;
   font-family: 'Rubik', sans-serif !important;
   font-weight: 700;
   @include mobile {
     font-size: 14px;
   }
+}
+
+.home_road_map_text > .sub-title {
+  margin-top: 4px;
+  margin-bottom: 12px;
+  font-style: italic;
 }
 
 .home_road_map_text p {

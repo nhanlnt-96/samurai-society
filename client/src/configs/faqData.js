@@ -1,27 +1,26 @@
 export const faqData = [
   {
-    question: "Lorem ipsum dolor sit amet?",
+    question: "How long do I have to use the NFT?",
     answer: [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet dolor eligendi eos harum ipsum nobis repudiandae tempore ullam.",
+      "You have up to 3 years of the official mint date to use the NFT.  Each NFT can be used once by any of our retail partners or distributors.",
     ],
   },
   {
-    question: "Lorem ipsum dolor sit amet?",
+    question: "Where can I use the NFT (Membership)?",
     answer: [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet dolor eligendi eos harum ipsum nobis repudiandae tempore ullam.",
+      "You can only use the ICE APE NFT as a Club membership with our retail partners.  See website for retailer info.",
     ],
   },
   {
-    question: "Lorem ipsum dolor sit amet?",
+    question:
+      "Can I compile them to get a larger discount? For example, if I have 3 ICE APE NTFs and want to buy loose non-GIA vs diamonds.  The price from the retailer is $5,000.  Can I add 20% + 20% + 20% for a total of 60% discount? ",
     answer: [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet dolor eligendi eos harum ipsum nobis repudiandae tempore ullam.",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet dolor eligendi eos harum ipsum nobis repudiandae tempore ullam.",
+      "No. It is 20% per piece of jewellery (including watches and grills).",
+      "Additional NFTs do not guarantee a compound effect to reduce your overall balance or quote.",
     ],
   },
   {
-    question: "Lorem ipsum dolor sit amet?",
-    answer: [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet dolor eligendi eos harum ipsum nobis repudiandae tempore ullam.",
-    ],
+    question: "Can an ICE APE NFT be resold or held?",
+    answer: ["Yes, it can be. Like any other crypto currency."],
   },
 ];
