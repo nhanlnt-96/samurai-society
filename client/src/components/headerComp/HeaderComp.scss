@@ -33,15 +33,11 @@
   &-container {
     @include desktop {
       height: 70px;
-      border: 1px solid #ffffff;
-      border-radius: 50px;
       padding-right: 0 !important;
       padding-left: 0 !important;
     }
     @include wide-desktop {
       height: 70px;
-      border: 1px solid #ffffff;
-      border-radius: 50px;
       padding-right: 0 !important;
       padding-left: 0 !important;
     }

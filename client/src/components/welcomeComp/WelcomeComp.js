@@ -9,12 +9,14 @@ const WelcomeComp = () => {
       <Container className="welcome-comp-container d-flex flex-column justify-content-center align-items-center">
         <Row className="welcome-comp-content">
           <h6 data-aos="fade-up" className="title aos-init aos-animate">
-            Lorem ipsum dolor sit amet, consectetur.
+            DIAMOND CLUB EXCLUSIVE MEMBERS
           </h6>
           <p data-aos="fade-up" className="sub-title aos-init aos-animate">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-            cupiditate esse ex illum incidunt omnis provident sit, suscipit
-            voluptatem? Incidunt.
+            Diamond Club Members will receive loose diamonds to use at their own
+            disposal. Once you adopt and ICE APE and become a member, you can
+            use it where you desire. VVS1, VVS2 Clarity loose diamonds only.
+            Retail value of 1 carat VVS loose diamonds are anywhere between
+            $3,000 to $18,000 or even more in USD.
           </p>
         </Row>
         <Row className="welcome-comp-button">

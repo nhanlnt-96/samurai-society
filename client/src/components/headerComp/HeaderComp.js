@@ -42,7 +42,7 @@ const HeaderComp = ({ connectWallet }) => {
               href="#introducing"
               className="menu-item d-flex flex-column justify-content-center align-items-center"
             >
-              <span>introducing samurai society</span>
+              <span>Intro to ICE APES</span>
             </Nav.Link>
             <Nav.Link href="#benefits" className="menu-item">
               BENEFITS & UTILITIES

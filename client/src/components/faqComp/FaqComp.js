@@ -42,12 +42,12 @@ const FaqComp = () => {
               alpha@iceapenft.com
             </a>
           </Col>
-          <Col lg={6} md={6} sm={12} className="social-container">
-            <img src={Message} alt="" />
-            <a href="https://lorem" className="social-item">
-              https://lorem
-            </a>
-          </Col>
+          {/*<Col lg={6} md={6} sm={12} className="social-container">*/}
+          {/*  <img src={Message} alt="" />*/}
+          {/*  <a href="https://lorem" className="social-item">*/}
+          {/*    https://lorem*/}
+          {/*  </a>*/}
+          {/*</Col>*/}
         </Row>
       </Container>
     </Container>
