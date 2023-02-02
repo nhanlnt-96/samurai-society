@@ -27,9 +27,9 @@ const IntroducingComp = () => {
           >
             <div data-aos="fade-down" className="title-container">
               <h3 className="title">
-                <em>Introducing</em>
+                <em>READ</em>
                 <br />
-                Lorem ipsum.
+                THE STORY
               </h3>
             </div>
             <div className="content-container">
@@ -113,7 +113,10 @@ const IntroducingComp = () => {
               ) : (
                 <></>
               )}
-              <button className="read-more-btn" onClick={() => setIsShowMore(!isShowMore)}>
+              <button
+                className="read-more-btn"
+                onClick={() => setIsShowMore(!isShowMore)}
+              >
                 {isShowMore ? "Read less" : "Read more"}
               </button>
             </div>

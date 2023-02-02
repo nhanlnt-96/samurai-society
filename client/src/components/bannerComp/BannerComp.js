@@ -44,11 +44,11 @@ const BannerComp = () => {
               <h1 data-aos="fade-up" className="aos-init aos-animate">
                 <em>Welcome to</em>
                 <br />
-                <span>iceapes</span>
+                <span>ICE APE CLUB</span>
               </h1>
               <h2 data-aos="fade-up" className="aos-init aos-animate">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
-                temporibus?
+                Join the club, adopt and ICE APE and reap the rewards of the
+                Diamond Club
               </h2>
             </Col>
             {blockchain.account && (
