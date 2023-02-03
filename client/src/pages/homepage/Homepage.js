@@ -34,7 +34,7 @@ const Homepage = () => {
       <Row>
         <SubBannerComp />
       </Row>
-      <Row id="nft-explain">
+      <Row id='members'>
         <Membership />
       </Row>
       <Row id="benefit">
