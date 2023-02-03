@@ -4,20 +4,20 @@ import OpenSea from "../assets/icons/social3.png";
 import Instagram from "../assets/icons/social4.png";
 
 export const socialData = [
+  // {
+  //   socialUrl: "#",
+  //   socialIcon: Twitter
+  // },
   {
-    socialUrl: "#",
-    socialIcon: Twitter
+    socialUrl: "https://discord.gg/KfuJxuCH",
+    socialIcon: Discord,
   },
+  // {
+  //   socialUrl: "#",
+  //   socialIcon: OpenSea
+  // },
   {
-    socialUrl: "#",
-    socialIcon: Discord
+    socialUrl: "https://www.instagram.com/iceapenft/",
+    socialIcon: Instagram,
   },
-  {
-    socialUrl: "#",
-    socialIcon: OpenSea
-  },
-  {
-    socialUrl: "#",
-    socialIcon: Instagram
-  }
 ];
