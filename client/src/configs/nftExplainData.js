@@ -49,4 +49,10 @@ export const nftExplainData = [
     content:
       "Rewards:  1 carat VVS reward for Rare Ape adoption – delivered to door (Purchase of Rare Ice Ape NFT)",
   },
+  {
+    img: [Robot],
+    imgName: "",
+    content:
+      "Rewards: 1 carat VVS reward for Rare Ape adoption (SOLITAIRE DIAMOND) – delivered to door (Purchase of Rare Ice Ape NFT) - Retail Value $40K+ USD. Membership gives you a 50% Discount. Only through ICE BAR Jewelry (www.icebarco.com)",
+  },
 ];

@@ -23,4 +23,11 @@ export const faqData = [
     question: "Can an ICE APE NFT be resold or held?",
     answer: ["Yes, it can be. Like any other crypto currency."],
   },
+  {
+    question:
+      "With my Diamond club membership can I use the discount for loose diamonds and custom jewelry from 2 different ICE APE  retail partners?",
+    answer: [
+      "Yes, you can use your membership towards loose diamonds and custom jewelry.",
+    ],
+  },
 ];
