@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import BannerComp from "../../components/bannerComp/BannerComp";
 import WelcomeComp from "../../components/welcomeComp/WelcomeComp";
@@ -9,8 +9,20 @@ import BenefitsComp from "../../components/benefitsComp/BenefitsComp";
 import RoadmapComp from "../../components/roadmapComp/RoadmapComp";
 import TeamComp from "../../components/teamComp/TeamComp";
 import FaqComp from "../../components/faqComp/FaqComp";
+import { useLocation } from "react-router-dom";
 
 const Homepage = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    if (pathname) {
+      const htmlElement = document.querySelector("html");
+      htmlElement.style.scrollBehavior = "auto";
+
+      document.getElementById(pathname?.replace("/", ""))?.scrollIntoView(true);
+
+      htmlElement.style.scrollBehavior = "smooth";
+    }
+  }, [pathname]);
   return (
     <Container
       fluid
@@ -34,7 +46,7 @@ const Homepage = () => {
       <Row>
         <SubBannerComp />
       </Row>
-      <Row id='members'>
+      <Row id="members">
         <Membership />
       </Row>
       <Row id="benefit">
